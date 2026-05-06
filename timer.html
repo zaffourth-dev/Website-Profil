@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="timer.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+<nav class="navbar">
+  <ul>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="skill.html">Skill</a></li>
+    <li><a href="timer.html">Timer Pomodoro</a></li>
+  </ul>
+</nav>
+
+<main class="nama pjg">
+    <!-- Nama -->
+    <section class="nama">
+      <h1 class="animate">KAMARUL ARIFIN MUZAFFAR</h1>
+    </section>
+
+  <div class="container">
+    <h1>Pomodoro Timer</h1>
+    <p>Pomodoro timer adalah alat untuk menerapkan Teknik Pomodoro,
+       metode manajemen waktu yang dikembangkan oleh Francesco Cirillo pada akhir tahun 1980-an.</p>
+
+    <div class="timer-wrapper">
+      <svg class="circle-timer" width="200" height="200">
+        <circle class="bg" cx="100" cy="100" r="90"></circle>
+        <circle class="progress" id="progress-circle" cx="100" cy="100" r="90"></circle>
+      </svg>
+      <div class="time-display" id="time">25:00</div>
+      <div class="mode-label" id="mode-text">Work</div>
+    </div>
+
+    <div class="controls">
+      <button id="start">▶ Start</button>
+      <button id="reset">⟲ Reset</button>
+    </div>
+
+    <div class="mode-buttons">
+      <button id="work">Work</button>
+      <button id="break">Break</button>
+    </div>
+  </div>
+
+  <!-- Sound -->
+  <audio id="alarm-sound" src="https://www.soundjay.com/buttons/sounds/beep-07.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+<!-- Footer -->
+  <footer>
+    © Praktik PIC 2025 (21_KAMARUL ARIFIN MUZAFFAR_XI TJKT 1)
+  </footer>
+</html>

@@ -1,0 +1,403 @@
+/* === NAVBAR === */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #f26627;
+  padding: 15px 0;
+  z-index: 999;
+  border-bottom: 2px solid rgba(255,255,255,0.2);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transform: translateY(-100%);
+  animation: slideDown 0.8s ease forwards;
+}
+
+@keyframes slideDown {
+  to { transform: translateY(0); }
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar li { display: inline-block; }
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+  background: #ffba44;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s;
+}
+
+.navbar a:hover {
+  background: #f9a26c;
+  color: #ffba44;
+  border: 2px solid #f59e0b;
+  transform: translateY(-3px);
+}
+
+/* === NAMA === */
+.nama {
+  margin-top: 90px;
+  text-align: center;
+  animation: fadeIn 1.5s ease;
+}
+
+.nama h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #1e293b;
+  letter-spacing: 1px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* === PROFILE SECTION === */
+.profile {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.profile-card {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  max-width: 1100px;
+  padding: 25px;
+  border-radius: 20px;
+  background: #fceed8;
+
+  /* efek glowing */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15),
+              0 0 20px rgba(255,186,68,0.4);
+  backdrop-filter: blur(10px);
+}
+
+/*logo sosmed*/
+.isi {
+  display: block;
+}
+
+.profile-img img {
+  width: 380px;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+  border: 3px solid #f59e0b;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  /* animasi halus */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s;
+
+  /* shadow default */
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.5);
+  outline-color: rgb(50, 5, 228);
+}
+
+/* BIO */
+.bio-container {
+  background: #ffddaa;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  margin-bottom: 20px;
+}
+
+.bio-container h2 { margin-bottom: 10px; }
+
+.bio-container p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #334155;
+}
+
+/* SOSMED */
+.sosmed-container {
+  background: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  margin-top: 20px;
+  display: inline-block;
+  text-align: center;
+  /* animasi halus */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s;
+
+  /* shadow default */
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.5);
+  outline-color: rgb(50, 5, 228);
+}
+
+.sosmed-container h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.social-links a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  transition: 0.3s;
+}
+
+/* Warna masing-masing sosmed */
+.social-links .instagram { 
+  background: radial-gradient(circle at 30% 107%, 
+    #fdf497 0%, #fdf497 5%, #fd5949 45%, 
+    #d6249f 60%, #285AEB 90%); 
+}
+.social-links .tiktok { background: black; }
+.social-links .youtube { background: red; }
+
+.social-links a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* === YOUTUBE SECTION === */
+
+.my {
+  max-width: 1100px;
+  padding: 20px;
+  margin: 20px auto;
+  background: #ffddaa;
+  border-radius: 20px;
+  text-align: center;
+
+  /* animasi halus */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s;
+
+  /* shadow default */
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.5);
+  outline-color: rgb(50, 5, 228);
+}
+
+.my:hover {
+  /* sedikit membesar */
+  transform: scale(1.03);
+}
+
+
+.youtube-section {
+  margin: 60px auto;
+  max-width: 1100px;
+  padding: 25px;
+  border-radius: 20px;
+  
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15),
+              0 0 25px rgba(255,0,0,0.3);
+  backdrop-filter: blur(10px);
+  background: #fceed8;
+
+}
+
+.video-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+   /* animasi halus */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s;
+
+  /* shadow default */
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.5);
+  outline-color: rgb(50, 5, 228);
+
+}
+
+.video-left iframe {
+  width: 400px;
+  height: 225px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.video-right h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #1e293b;
+}
+
+.video-right p {
+  margin: 0 0 15px;
+  font-size: 16px;
+  color: #555;
+}
+
+.btn-yt {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: #ff0000;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+  /* animasi halus */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s;
+
+  /* shadow default */
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.5);
+  outline-color: rgb(50, 5, 228);
+}
+
+.btn-yt:hover { background: #cc0000; }
+
+
+/* Tombol ke Channel */
+.youtube-channel {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.youtube-channel a.youtube {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background: #ff0000;
+  color: #fff !important;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* animasi halus */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s;
+
+  /* shadow default */
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.5);
+  outline-color: rgb(50, 5, 228);
+}
+
+.youtube-channel a.youtube:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .profile-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-img img { width: 90%; }
+
+  .video-row { flex-direction: column; }
+
+  .video-left iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* === FOOTER === */
+footer {
+  width: 100%;
+  height: 50px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8fafc;
+  border-top: 2px solid #e5e7eb;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+}
+
+/* Skill Section */
+.skill-section {
+  background-color: #fff0e6; /* Warna lembut mirip YouTube section */
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 1100px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  
+}
+
+.skill-section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.skill-section p {
+  font-size: 1.1em;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+/* Skills Container */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* Skill Card */
+.skill-card {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+  background: #ffddaa;
+
+ /* animasi halus */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s;
+
+  /* shadow default */
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.5);
+  outline-color: rgb(50, 5, 228);
+
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.skill-card h3 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.skill-card p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.5;
+}
+
+
+/*POMODORO TIMER*/
+
